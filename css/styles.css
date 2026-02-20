@@ -1,0 +1,635 @@
+/* Basic CSS file for Sprout & Grow website */
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ----Body styles---- */
+
+body, h1, h2, h3, p, dt, dd, label, button {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #dfe2d2;
+    color: #2F3A2D;
+    min-width: 300px;
+}
+
+h1 { 
+    font-size: 2rem;
+    color: #084F3D;
+    text-align: center;
+}
+
+h2 { 
+    font-size: 1.5rem;
+    color: #084F3D;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+h3 { 
+    font-size: 1.15rem;
+    color: #2F3A2D;
+    text-align: center;
+}
+
+p, ul li  { 
+    font-size: 1.05rem;
+}
+
+dt {
+    font-size: 1.05rem;
+    color: #084F3D;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+dd {
+    font-size: 1.05rem;
+}
+
+ul {
+    line-height: 2em;
+}
+
+.emphasize {
+    font-style: italic;
+    text-align: center;
+}
+
+/* Link styles */
+
+a {
+    color: #DFE2D2;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #E2E2E2;
+}
+
+.body-link {
+    color: #612563;
+    font-size: inherit;
+    text-align: center;
+    font-weight: bold;
+}
+
+.body-link:hover {
+    color: #632F74;
+    font-style: italic;
+}
+
+.call-to-action {
+    display: inline-block;
+    color: #fff;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #612563;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-top: .75rem;
+}
+
+.call-to-action:hover {
+    color: #D8D3E3;
+}
+
+/* ----Header styles---- */
+
+header, footer {
+    background-color: #084F3D;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+#header-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----Nav area styles---- */
+
+header nav {
+    max-width: 100%
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.25em;
+    padding-bottom: 0.5em;
+    margin: auto 4rem auto 4rem;
+}
+
+nav a {
+    display: block;
+    font-size: 1.25rem;
+}
+
+/* Nav menu dropdown styles */
+
+nav .dropdown {
+    display: none;
+    position: absolute;
+    margin: 0;
+    text-align: left;
+    background-color: #084F3D;
+    padding: 0.5rem;
+    white-space: nowrap;
+}
+
+nav #events-dropdown {
+    right: 20%;
+}
+
+nav #resources-dropdown {
+    right: 0;
+}
+
+nav .dropdown li a {
+    padding: 0 0.75rem;
+    font-size: 1rem;
+}
+
+nav .has-dropdown:hover .dropdown {
+    display: block;
+}
+
+/* ----Main styles---- */
+
+main {
+    padding: 0 2rem;
+    text-align: left;
+    font-size: 1.15rem;
+}
+
+main section, main div {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    line-height: 1.5rem;
+}
+
+
+/* Styles for wordy sections */
+
+.info {
+    max-width: 90%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.info h1 {
+    padding-bottom: 1rem;
+}
+
+.definition-list {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Social media link styles */
+
+.social {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 2em;
+    height: 2em;
+    padding: 0 0.5em;
+    box-sizing: content-box;
+}
+
+/* ----Home page styles---- */
+
+/* Hero image styles */
+
+.hero-image {
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+}
+
+/* Homepage image styles */
+
+.home-image {
+    border-radius: 1rem;
+}
+
+/* Flex styles */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Home page flex images */
+
+#featured-services, #shop-our-favorites {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+    padding: 1.25rem;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#seasonal, #grow-with-us {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+    padding: 1.25rem;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#seasonal img, #grow-with-us img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 95%;
+}
+
+/* ----About page styles---- */
+
+/* Flex styles for "Our Mission" section and image */
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+#about-image, #about-mission {
+    flex: 1 1 45%;
+}
+
+#about-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+/* ----Product page styles---- */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin: 0 auto;
+    max-width: 90%;
+    margin-bottom: 1rem;
+}
+
+/* Product flex styles */
+
+#flowers, #vegetables, #house-plants, #gardening-supplies{
+    flex: 1 1 45%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Product image styles */
+
+.product-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ----Event page styles---- */
+
+#events-page {
+    padding-bottom: 1.5rem;
+}
+
+/* Flex styles for moving the image to the right on large viewports */
+
+.community-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+}
+
+.community-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#workshops-gatherings, #events-highlights {
+    flex: 1 1 35%;
+    margin: 0;
+}
+
+/* ----Register page styles---- */
+
+/* Logo styles */
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 15rem;
+}
+
+/* Register page image styles */
+
+#register-image {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Form styles */
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    background-color: #f7f8f0;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="tel"],
+.registration-form textarea,
+.registration-form select {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.registration-form input[type="checkbox"],
+.registration-form input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.registration-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.registration-form input[type="submit"] {
+    background-color: #084F3D;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.registration-form input[type="submit"]:hover {
+    background-color: #0a684b;
+}
+
+.registration-form button {
+    background-color: #084F3D;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.registration-form button:hover {
+    background-color: #0a684b;
+}
+
+/* Footer style */
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: none;
+    opacity: 80%;
+}
+
+/* Phone Media Query */
+@media screen and (max-width: 589px) {
+
+    h1 { 
+        font-size: 1.25rem; 
+    }
+
+    h2 { 
+        font-size: 1.1rem; 
+    }
+
+    h3 { 
+        font-size: 1rem; 
+    }
+
+    p, ul li, dt, dd { 
+        font-size: 0.9rem; 
+    }
+
+    .call-to-action {
+        font-size: 1rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.75rem;
+    }
+
+    header {
+        padding-bottom: 0.5rem;
+    }
+
+    nav ul {
+        padding: 0;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    nav li a {
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+        margin: 0.10rem;
+    }
+
+    main {
+        font-size: 0.9rem;
+    }
+
+    main div {
+        padding: 0;
+    }
+
+    main section {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .info {
+        max-width: 100%;
+    }
+
+    .definition-list {
+    max-width: 100%;
+    }
+
+    /* Space added to keep background visible on small viewports */
+
+    .registration-form {
+        padding: 1rem;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    #flowers, #vegetables, #house-plants, #gardening-supplies{
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    /* Hides desktop nav link so tapping will open dropdown menu and not link to other page */
+
+    #nav-desktop {
+    display: none;
+    }
+
+}
+
+/* Tablet Media Query */
+@media screen and (min-width: 590px) and (max-width: 1000px) {
+
+    h1 { 
+        font-size: 1.5rem; 
+    }
+    
+    h2 { 
+        font-size: 1.25rem; 
+    }
+
+    h3 { 
+        font-size: 1rem; 
+    }
+
+    p, ul li, dt, dd { 
+        font-size: 1rem; 
+    }
+
+    .call-to-action {
+        font-size: 1.25rem;
+    }
+
+    header {
+        padding-bottom: 1.25rem;
+    }
+
+    nav ul {
+        padding-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .definition-list {
+    max-width: 100%;
+    }
+
+    #workshops-gatherings, #community-image {
+        flex: 1 1 100%;
+    }
+
+    /* Hides desktop nav link so tapping will open dropdown menu and not link to other page */
+
+    #nav-desktop {
+    display: none;
+    }
+
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 1001px), print {
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        padding: 1rem 2%;
+    }
+
+    nav ul {
+        padding: 0 5%;
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
+
+    main {
+        margin: 2rem;
+    }
+
+    /* Hides mobile nav link so hovering will open dropdown and clicking will open link to other page */
+
+    #nav-mobile {
+    display: none;
+    }
+}
